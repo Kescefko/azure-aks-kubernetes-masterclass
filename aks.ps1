@@ -1,0 +1,1 @@
+kubectl.exe replace -f replicaset-demo.yaml
