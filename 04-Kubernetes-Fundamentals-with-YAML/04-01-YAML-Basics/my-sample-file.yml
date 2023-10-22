@@ -1,0 +1,29 @@
+person: # dictionary
+  name: gyorgy
+  age: 28
+  city: Budapest
+  hobbies: # list
+    - running
+    - coding
+  friends: # multiple lists
+    - name: friend1
+      age: 24
+    - name: friend2
+      age: 26
+--- # separator
+apiVersion: v1 # String
+kind: Pod  # String
+metadata: # Dictionary
+  name: myapp-pod
+  labels: # Dictionary 
+    app: myapp    
+    tier: frontend     
+spec:
+  containers: # List
+    - name: myapp
+      image: stacksimplify/kubenginx:1.0.0
+      ports: # List
+        - containerPort: 80
+          protocol: "TCP"
+        - containerPort: 81
+          protocol: "TCP"  
