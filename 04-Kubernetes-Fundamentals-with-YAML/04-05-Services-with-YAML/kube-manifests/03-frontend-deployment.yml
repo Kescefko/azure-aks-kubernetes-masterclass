@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-ngnixapp
+  labels:
+    app: frontend-ngnixapp
+    tier: frontend
+spec:
+  replicas:
+  selector:
+    matchLabels:
+      app: frontend-ngnixapp
+  template:
+    metadata:
+      labels:
+        app: frontend-ngnixapp
+        tier: frontend
+    spec:
+      containers:
+        - name: frontend-ngnixapp
+          image: stacksimplify/kube-frontend-nginx:1.0.0
+          ports:
+            - containerPort: 80
