@@ -32,6 +32,6 @@ spec:
             - name: DB_NAME
               value: "webappdb"            
             - name: DB_USERNAME
-              value: "dbadmin@akswebappdb"            
+              value: "admi_78feADi798st7r4654"            
             - name: DB_PASSWORD
-              value: "Redhat1449"            
+              value: "hfHJgbZksWgxBwmR6Y-bwh9fz6dCfeMvlPM2OIdy"            
