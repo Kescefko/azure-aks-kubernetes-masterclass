@@ -5,7 +5,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteMany
-  StorageClassName: my-azurefile-sc
-  resouorces:
+  storageClassName: my-azurefile-sc
+  resources:
     requests:
       storage: 5Gi
